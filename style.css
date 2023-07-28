@@ -9,11 +9,11 @@ body{
 }
 @media screen and (max-width:440px) {
     body{
-        max-width: 100% !important;
-        overflow-x: hidden;
-        -ms-overflow-style: none;
+        /*   */
+        /* overflow-x: hidden; */
+        /* -ms-overflow-style: none; */
             /* IE and Edge */
-        scrollbar-width: none;
+        /* scrollbar-width: none; */
     }
 }
 .hero{
@@ -39,7 +39,7 @@ body{
 @media screen and (max-width:440px) {
     .navbar{
         background-color: black;
-        max-width:85% !important;
+        /* max-width:85% !important; */
     }
     .navbar-toggler{
         background:linear-gradient(45deg,rgb(0, 0, 0),rgb(36, 29, 29))
@@ -83,7 +83,7 @@ font-size: 2.7rem;
     color:white;
     font-family:monospace;
     border-radius:50px;
-    margin-top:calc(0.2*100vh);
+    margin-top:calc(0.2*100%);
     font-family: 'Playfair Display', serif;
 text-transform: uppercase;
 }
@@ -284,7 +284,7 @@ box-shadow: 0px 0px 3px 4px rgb(118, 118, 118);
         padding-top: 20px;
         padding-bottom: 70px;
         display: normal;
-        max-width: 100% !important;
+         
     }
     .card{
         /* width:50%; */
@@ -326,7 +326,7 @@ color: #fff;
         height: 990px;
         padding-top: 15px;
         /* outline: 1px solid red; */
-            max-width: 100% !important;
+             
     }
         .imgskills2 {
             width:50%;
@@ -375,7 +375,7 @@ color: #fff;
                 }
     .achievements{
         /* outline: 1px solid red; */
-            max-width: 100% !important;
+             
     }
 }
 
@@ -411,7 +411,7 @@ color: #fff;
     }
     .contact{
         /* outline: 1px solid red; */
-            max-width: 100% !important;
+             
     }
 }
 
@@ -429,9 +429,9 @@ color: #fff;
 @media screen and (max-width:440px) {
     .connect{
         height: 700px;
-        max-width: 100% !important;
+         
         /* outline: 1px solid red;
-            max-width: 100% !important; */
+              */
     }
     .connecthead{
         margin-bottom: 0;
@@ -458,7 +458,7 @@ color: #fff;
 }
 @media screen and (max-width:440px) {
     .footer {
-        max-width: 100% !important;
+         
             background-color: black;
             color: white;
              outline: 1px solid red; 
