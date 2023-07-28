@@ -4,9 +4,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
 body{
-    /* overflow-y: auto; */
-}
+    overflow-x: hidden;
 
+}
+@media screen and (max-width:440px) {
+    body{
+        max-width: 100% !important;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+            /* IE and Edge */
+        scrollbar-width: none;
+    }
+}
 .hero{
     /* background-image: url("./images/bg.avif"); */
     /* padding-top:0px !important;     */
@@ -21,7 +30,7 @@ body{
 .navbar{
     background: transparent;
     /* position: fixed; */
-    /* width: 100vw; */
+    /* width: vw; */
 }
 .faltudiv{
     height:200px;
@@ -30,7 +39,7 @@ body{
 @media screen and (max-width:440px) {
     .navbar{
         background-color: black;
-        /* width:89%; */
+        max-width:85% !important;
     }
     .navbar-toggler{
         background:linear-gradient(45deg,rgb(0, 0, 0),rgb(36, 29, 29))
@@ -51,10 +60,10 @@ font-size: 2.7rem;
 }
 @media screen and (max-width:440px) {
     body{
-        max-width: 100%;
+        /* max-width: 100%; */
     }
     .navbar-brand{
-        font-size: 25px;
+        font-size: 21px;
     }
 } 
 .nav-item{
@@ -159,6 +168,7 @@ text-transform: uppercase;
     /* font-family: 'Playfair Display', serif; */
     font-family: 'PT Serif', serif;
     text-transform: uppercase;
+    text-align: center;
     text-decoration: underline;
     margin-bottom: 40px;
 }
@@ -169,7 +179,8 @@ text-transform: uppercase;
 }
 .about{
     /* background: linear-gradient(35deg ,rgb(230,182,237) 39%,rgb(199, 114, 207)25%); */
-    height:calc(1.0*100vh);
+    height:calc(1.0*100%);
+    width:100%;
     color: rgb(15, 18, 11);
     padding-bottom: 20px;
     
@@ -186,11 +197,11 @@ text-transform: uppercase;
     font-family: 'PT Serif', serif;
 
 }
-.abouticons{
-    border-radius: 50%;
+/* .abouticons{
+    border-radius: 50%; */
 
     /* box-shadow: 0px 0px 1px 5px rgb(98, 0, 0); */
-}
+
 .abouticonimg{
     border-radius: 50%;
     margin-bottom: 120px;
@@ -207,10 +218,13 @@ text-transform: uppercase;
     }
     .about{
         /* height: 1000px; */
-        /* background: linear-gradient(90deg, rgb(0, 0, 0) 0, rgb(255, 255, 255) 100%); */
+        /* outline: 1px solid red; */
+        max-width: 90% !important;
+        background: linear-gradient(90deg, rgb(0, 0, 0) 12.8%, rgb(255, 255, 255) 10%);
+        background: linear-gradient(90deg, rgb(0, 0, 0) 12.8%, rgb(255, 255, 255) 10%);
     }
     #aabout{
-        height:1000px;
+        height:900px;
     }
     #aboutme{
         font-size: 40px;
@@ -218,22 +232,9 @@ text-transform: uppercase;
     }
     .aboutpoints{
         font-size: 15px;
-        margin-left: 46px;
+        margin-left: calc(0.08*100%);
+        overflow-x: scroll;
     }
-    .abouticons{
-        margin-left: 56px;
-        box-shadow: 0px 0px 0px 0px rgb(98, 0, 0);
-        width: 55px;
-
-        height: 55px;
-        margin-top: 55px;
-        
-        /* margin-right: 125px; */
-    }
-        .abouticonimg {
-            border-radius: 50%;
-            box-shadow: 0px 0px 0px 0px rgb(98, 0, 0);
-        }
 }
 a{
     color:inherit;
@@ -283,9 +284,10 @@ box-shadow: 0px 0px 3px 4px rgb(118, 118, 118);
         padding-top: 20px;
         padding-bottom: 70px;
         display: normal;
+        max-width: 85% !important;
     }
     .card{
-        width:50%;
+        /* width:50%; */
     }
         .projectshead h1 {
             /* font-family: 'Lobster', cursive;     */
@@ -321,13 +323,19 @@ color: #fff;
 
 @media screen and (max-width:440px) {
     .skills{
-        height: 1310px;
+        height: 990px;
         padding-top: 15px;
+        /* outline: 1px solid red; */
+            max-width: 85% !important;
     }
         .imgskills2 {
             width:50%;
             margin-bottom: 15px;
             margin-top: 15px;
+        }
+        .imgskills{
+            width:80px;
+            height:80px;
         }
     
 }
@@ -363,7 +371,12 @@ color: #fff;
                     font-size: 15px;
                     font-family: 'PT Serif', serif;
                     margin-left: 2px;
+                    max-width: 90% !important;
                 }
+    .achievements{
+        /* outline: 1px solid red; */
+            max-width: 85% !important;
+    }
 }
 
 /*Contact me*/
@@ -391,7 +404,14 @@ color: #fff;
 }
 @media  screen and (max-width:440px) {
     .contacthead h1{
-            font-size: 50px;
+            font-size: 30px;
+    }
+    .form-control{
+        width:calc(0.65*100%);
+    }
+    .contact{
+        /* outline: 1px solid red; */
+            max-width: 85% !important;
     }
 }
 
@@ -408,10 +428,21 @@ color: #fff;
 }
 @media screen and (max-width:440px) {
     .connect{
-        height: 500px;
+        height: 700px;
+        max-width: 85% !important;
+        /* outline: 1px solid red;
+            max-width: 85% !important; */
     }
     .connecthead{
         margin-bottom: 0;
+    }
+    .abouticons{
+        max-width: calc(0.4*100%);
+        /* overflow-x: hidden; */
+    }
+    .abouticonimg{
+        
+        /* overflow-x: hidden; */
     }
 }
 
@@ -427,12 +458,15 @@ color: #fff;
 }
 @media screen and (max-width:440px) {
     .footer {
+        max-width: 85% !important;
             background-color: black;
             color: white;
+             outline: 1px solid red; 
             height: 60px;
         }
-                .footerlines {
-                    font-size: 1rem;
+    .footerlines {
+                    font-size: 20px;
+
                     font-family: 'Playfair Display', serif;
                 }
 }
