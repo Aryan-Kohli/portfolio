@@ -191,6 +191,9 @@ text-transform: uppercase;
     padding-top:74px ;    
 
 }
+.about a:hover{
+    color: red;
+}
 .aboutpoints{
     font-size: 25px;
     color:rgb(0, 0, 0);
@@ -247,8 +250,15 @@ a:hover{
 .projects{
     padding-top: 100px;
     padding-bottom:80px;
+    background: linear-gradient(90deg,rgba(214,250,216,0.08),
+    rgba(235,253,239,0.1)),url("images/newbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
     /* background: linear-gradient(135deg,rgb(0, 0, 0) ,rgb(36, 36, 36) ,rgb(12,12,12)); */
-    background: linear-gradient(45deg, rgb(255, 255, 255) 10%, rgb(255, 144, 144) ) ;
+    /* background: linear-gradient(45deg, rgb(255, 255, 255) 10%, rgb(255, 144, 144) ) ; */
+    
+    /* background: linear-gradient(45deg, rgb(255, 245, 245) 10%, rgb(255, 150, 150) ) ; */
 /* background-image: url("./projects/todo.jpg"); */
 /* background-blend-mode:10 ; */
    
@@ -263,18 +273,50 @@ color:rgb(0, 0, 0);
 }
 .card{
     color:white;
-    border:2px solid white;
+    border:2px solid rgba(255,255,255,0.027);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
     /* font-family: 'Playfair Display', serif; */
 font-family: 'PT Serif', serif;
-text-shadow: 1px 1px 2px black;
+/* text-shadow: 1px 1px 1px black; */
 background: transparent;
 font-size:19px;
-color:rgb(19, 1, 1);
-box-shadow: 0px 0px 3px 4px rgb(0, 0, 0);
+/* color:rgb(19, 1, 1); */
+/* color:white; */
+max-width: calc(0.25*100vw);
 }
+.col-4 .card :hover
+{
+    /* box-shadow: 5px 10px 5px rgb(0, 0, 0); */
+    /* background: black !important; */
+    /* color: wheat,  !important; */
+}
+ .card img:hover
+{
+    /* box-shadow: 5px 10px 5px rgb(0, 0, 0); */
+    /* background: black !important; */
+    /* color: wheat,  !important; */
+}
+.projects2  .card-body
+{
+    color:white;
 
+}
+.card-img-top{
+    height: 150px;
+}
+.btn-warning
+{
+    /* background-color: rgba(255, 255, 255, 0.604) !important;  */
+}
 .projects2{
-    background: linear-gradient(157deg, rgb(19, 19, 19), rgb(0, 0, 0));
+    background: linear-gradient(90deg, rgba(214, 250, 216, 0.08),
+                rgba(235, 253, 239, 0.1)), url("images/newbg.jpg");
+    /* background: linear-gradient(57deg, rgb(38, 19, 19), rgb(0, 0, 0)); */
+    background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    height: 90vh;
 }
 @media screen and (min-width:441px) {
     .projects2{
@@ -285,6 +327,11 @@ box-shadow: 0px 0px 3px 4px rgb(0, 0, 0);
     .projects{
         display: none;
         /* display: none; */
+    }
+    .card{
+    
+        max-width: calc(0.8*100vw);
+        margin-left: calc(0.05*100vw);
     }
     .card{
         box-shadow: none;
@@ -316,8 +363,8 @@ box-shadow: 0px 0px 3px 4px rgb(0, 0, 0);
 .skills{
     padding-top: 79px;
     padding-bottom: 50px;
-    /* background-color: rgb(14, 14, 14); */
-    background: linear-gradient(157deg, rgb(19, 19, 19)  , rgb(0, 0, 0)  );
+    background-color: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(21, 20, 20, 0.63), rgba(0, 0, 0, 0.436)) ,url("./images/bg2.jpg ") ;
     color:white;
 }
 #skillshead {
