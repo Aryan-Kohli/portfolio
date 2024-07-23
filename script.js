@@ -9,3 +9,10 @@ window.addEventListener('scroll',()=>{
         navel.classList.remove('navbar-scrolled');
     }
 })
+var typed = new Typed(".auto-type",{
+    strings : ["Programmer", "Web Developer", "App Developer"],
+    typeSpeed : 150,
+    backSpeed : 150,
+    loop : true
+});     
+    
