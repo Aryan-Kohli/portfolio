@@ -39,7 +39,10 @@ body{
         /* max-width:85% !important; */
     }
     .navbar-toggler{
-        background:linear-gradient(45deg,rgb(0, 0, 0),rgb(36, 29, 29))
+        height: 2.5em;
+        border:1px solid rgb(153, 192, 246) ;
+        box-shadow: 0px 0px 25px rgb(86, 119, 145);
+        /* background:linear-gradient(45deg,rgb(0, 0, 0),rgb(36, 29, 29)) */
     }
 }
 
@@ -63,8 +66,24 @@ font-size: 2.7rem;
         font-size: 21px;
     }
 } 
+.navbar-toggler2{
+    background-color: #03030a;
+    padding-bottom: 90px;
+}
+.navbar-toggler{
+
+    background-color: rgb(15, 13, 14)!important;
+}
 .nav-item{
     font-family: 'PT Serif', serif;
+}
+.navhamburger{
+    height: 2.5em;
+    text-shadow: 0px 0px 25px rgb(86, 119, 145);
+        /* border: 1px solid rgb(153, 192, 246); */
+        /* box-shadow: 0px 0px 25px rgb(86, 119, 145);  */
+    color: rgb(153, 232, 245);
+    margin-block: 5px;
 }
 .nav-link:hover{
     color: aqua;
@@ -73,6 +92,19 @@ font-size: 2.7rem;
     /* position: absolute; */
     background-color: black;
 }
+
+.resumeNav{
+    color: white;
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+    border: 1px solid rgb(153, 232, 245);
+    /* padding-block: -15px; */
+    /* margin-left: 20px; */
+    padding: 4px;
+    max-width: 160px;
+    box-shadow: 0px 0px 10px rgb(86, 119, 145);
+}
+/*hero */
 .herotxt h1{
     font-size: 4rem;
 }
@@ -288,7 +320,7 @@ text-transform: uppercase;
     text-shadow: 0px 0px 25px rgb(86, 119, 145);
     /* font-family: 'PT Serif', serif; */
 /* font-family: 'Mansalva', cursive; */
-    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Courier New', Courier, monospace;
     /* font-family: 'Rye'; */
     font-weight: "400";
 }
@@ -318,7 +350,8 @@ text-transform: uppercase;
 }
 .aboutpara h4{
     font-size: 1.5rem;
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'PT Serif', serif; */
+    /* font-family: 'Courier New', Courier, monospace; */
 }
 .aboutimgdiv img{
     width: 150%;
@@ -493,7 +526,26 @@ box-shadow: 0px 0px 25px rgb(86, 119, 145);
     color:rgb(193, 252, 226);
     /* text-shadow: 0px 0px 25px rgb(86, 119, 145); */
 }
-
+.viewPractice h1{
+    font-size: 2.2rem;
+/* font-family: 'Mansalva', cursive; */
+    /* color:rgb(193, 252, 226);  */
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0px 0px 25px rgb(86, 119, 145);
+}
+.viewPractice{
+    margin-top: 65px;
+    box-shadow: 0px 0px 25px rgb(86, 119, 145);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* background-color: rgb(2,35,42); */
+    border: 1px solid rgb(103 216 242);
+    /* background-color: aqua; */
+}
 /* SKills*/
 .skills{
 
@@ -716,7 +768,9 @@ color: #fff;
         margin-bottom: 0;
     }
     .abouticons{
-        max-width: calc(0.4*100%);
+        /* max-width: calc(0.4*100%); */
+        width: 85px;
+        margin-left: 28px;
         /* overflow-x: hidden; */
     }
     .abouticonimg{
